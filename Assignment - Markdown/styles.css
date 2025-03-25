@@ -50,7 +50,7 @@ button{
     border: none;  
     border-radius: 4px;  
     cursor: pointer;  
-    width: 100%;
+    width:100%;
 }  
 
 button:hover {  
@@ -63,6 +63,32 @@ button:hover {
     border-radius: 4px;  
     background-color: #f9f9f9; 
     height: 100%; 
-    /* overflow-y: auto; */
+    
 }
 
+/* Media Queries */  
+@media (max-width: 768px) {  
+    .container {  
+        flex-direction: column;   
+    }  
+    .editor, .preview {  
+        width: 100%; 
+        height: auto;   
+        margin-bottom: 20px;  
+        margin-right: 20px;
+        
+    }  
+    textarea {  
+        height: 50vh;  
+    }  
+}  
+
+@media (max-width: 480px) {  
+    body {  
+        padding: 10px; 
+    }  
+
+    button {  
+        padding: 8px; 
+    }  
+}  
